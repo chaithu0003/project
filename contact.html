@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CoCakes</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #222;
+            color: #fff;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        nav ul li a.cta {
+            background-color: #f1c40f;
+            padding: 8px 20px;
+            border-radius: 5px;
+        }
+
+        header {
+            background-color: #f1c40f;
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .contact-container {
+            padding: 50px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .contact-info {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info div {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-info div i {
+            font-size: 1.5rem;
+            color: #f1c40f;
+        }
+
+        .contact-info div p {
+            margin: 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        form h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #f1c40f;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #e1b507;
+        }
+
+        .map {
+            grid-column: 1 / -1;
+            height: 300px;
+            margin-top: 50px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .map {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>We’re here to help. Reach out to us for any questions or concerns.</p>
+    </header>
+
+    <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <div>
+                <i class="ri-map-pin-line"></i>
+                <p>123 Bakery Street, Sweet City</p>
+            </div>
+            <div>
+                <i class="ri-phone-line"></i>
+                <p>+91 9390752873</p>
+            </div>
+            <div>
+                <i class="ri-mail-line"></i>
+                <p>support@cocakes.com</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="#" method="POST">
+            <h2>Send Us a Message</h2>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Embedded Map -->
+        <iframe 
+            class="map" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508616!2d144.9556515153161!3d-37.81721397975154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577c9568c9a76e8!2sSweet%20Bakery!5e0!3m2!1sen!2sus!4v1642582280212!5m2!1sen!2sus" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+</body>
+
+</html>
